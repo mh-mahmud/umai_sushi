@@ -134,12 +134,12 @@
 
       <!-- product-area-start -->
       <section class="product-area pt-65 pb-40">
-      @if(count($tyres) > 0)
+      @if(count($rameen) > 0)
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-6 col-12">
                   <div class="tpsection mb-40">
-                     <h4 class="tpsection__title">Tyres</h4>
+                     <h4 class="tpsection__title">Rameen</h4>
                   </div>
                </div>
                
@@ -148,7 +148,7 @@
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
                   <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
-                     @foreach($tyres as $product)
+                     @foreach($rameen as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
@@ -200,12 +200,12 @@
          </div>
       @endif
 
-      @if(count($engine_oil) > 0)
+      @if(count($tonkatsu) > 0)
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-6 col-12">
                   <div class="tpsection mb-40">
-                     <h4 class="tpsection__title">Engine Oil</h4>
+                     <h4 class="tpsection__title">Tonkatsu</h4>
                   </div>
                </div>
                
@@ -214,7 +214,7 @@
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
                   <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
-                     @foreach($engine_oil as $product)
+                     @foreach($tonkatsu as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
@@ -270,7 +270,7 @@
             <div class="row">
                <div class="col-lg-4 col-md-6 col-12">
                   <div class="tpsection mb-40">
-                     <h4 class="tpsection__title">Car Care Products</h4>
+                     <h4 class="tpsection__title">Sushi</h4>
                   </div>
                </div>
             </div>
@@ -278,7 +278,7 @@
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
                   <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
-                     @foreach($car_cares as $product)
+                     @foreach($sushi as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
@@ -321,12 +321,12 @@
             </div>
          </div>
 
-      @if(count($break_shoe) > 0)
+      @if(count($tempura) > 0)
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-6 col-12">
                   <div class="tpsection mb-40">
-                     <h4 class="tpsection__title">Break Shoe</h4>
+                     <h4 class="tpsection__title">Tempura</h4>
                   </div>
                </div>
 
@@ -335,7 +335,7 @@
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
                   <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
-                     @foreach($break_shoe as $product)
+                     @foreach($tempura as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
@@ -450,7 +450,7 @@
  
       <section class="banner-area pb-20">
         <div class="tpbanneritem__thumb mb-20">  
-        <img style="width:100%;" src="{{url('/')}}/assets/theme/assets/img/banner/green-farm.jpg" alt="banner-img">
+        <img style="width:100%;" src="{{url('/')}}/assets/theme/assets/img/banner/banner-bg-05.jpg" alt="banner-img">
         </div>
       </section>
       <!-- banner-area-end -->

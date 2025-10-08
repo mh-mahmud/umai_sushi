@@ -20,7 +20,8 @@ class SliderService
             $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('slider_image')->getClientOriginalExtension();
             $fileNameToStore = $fileName.'_'.time().'.'.$extension;
-            $path = $request->file('slider_image')->move(getcwd().'/public/uploads/sliders', $fileNameToStore);
+            // $path = $request->file('slider_image')->move(getcwd().'/public/uploads/sliders', $fileNameToStore);
+            $path = $request->file('slider_image')->move(getcwd().'/uploads/sliders', $fileNameToStore);
             
         } else {
             

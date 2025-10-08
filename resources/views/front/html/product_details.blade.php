@@ -72,12 +72,16 @@
                   <div class="tpproduct-details__content">
                      <div class="tpproduct-details__tag-area d-flex align-items-center mb-5">
                         <span class="tpproduct-details__tag">{{$product->category->category_name}}</span>
+
+                        {{--
                         <div class="tpproduct-details__rating">
                            <a href="#"><i class="fas fa-star"></i></a>
                            <a href="#"><i class="fas fa-star"></i></a>
                            <a href="#"><i class="fas fa-star"></i></a>
                         </div>
                         <a class="tpproduct-details__reviewers">{{ $product->total_sell }}+ Total Sell</a>
+                        --}}
+
                      </div>
                      <div class="tpproduct-details__title-area d-flex align-items-center flex-wrap mb-5">
                         <h3 class="tpproduct-details__title">{{$product->name}}</h3>
@@ -97,6 +101,8 @@
                         <p>{!!$product->description!!}</p>
                      </div>
                      --}}
+
+                     {{--
                      <div class="tpproduct-details__count d-flex align-items-center flex-wrap mb-25">
                         <div class="tpproduct-details__quantity">
                            <span class="cart-minus"><i class="far fa-minus"></i></span>
@@ -108,13 +114,13 @@
                            <!-- <a href=""><i class="fal fa-shopping-cart"></i> Add To Cart</a> -->
                         </div>
 
-                        {{--
+                        
                         <div class="tpproduct-details__wishlist ml-20">
                            <a href="#"><i class="fal fa-heart"></i></a>
                         </div>
-                        --}}
-
+                        
                      </div>
+                     --}}
                      {{--
                      <div class="tpproductdot mb-30">
                         <a class="tpproductdot__variationitem" href="#">
@@ -171,7 +177,7 @@
                         <span><a href="#">t-shirts,</a></span>
                         <span><a href="#">women</a></span>
                      </div>
-                     --}}
+                     
                      <div class="tpproduct-details__information tpproduct-details__social">
                         <p>Share:</p>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -180,6 +186,7 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                      </div>
+                     --}}
                   </div>
                </div>
                <div class="col-lg-2 col-md-5">
@@ -191,7 +198,7 @@
                                  <img src="{{url('/')}}/assets/theme/assets/img/icon/product-det-1.png" alt="" class="tpproduct-details__img-hover">
                               </div>
                               <div class="tpproduct-details__condation-text">
-                                 <p>Free Shipping apply to all<br>orders over Tk 10000</p>
+                                 <p>Free Delivery apply to all<br>orders over Tk 1000</p>
                               </div>
                            </div>
                         </li>
@@ -247,9 +254,11 @@
                            <li class="nav-item" role="presentation">
                               <button class="nav-links" id="information-tab" data-bs-toggle="tab" data-bs-target="#additional-information" type="button" role="tab" aria-controls="additional-information" aria-selected="false">Additional information</button>
                            </li>
+                           {{--
                            <li class="nav-item" role="presentation">
                               <button class="nav-links" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
                            </li>
+                           --}}
                         </ul>
                      </div>
                      <div class="tab-content tp-content-tab" id="myTabContent-2">

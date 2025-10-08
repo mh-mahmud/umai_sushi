@@ -30,25 +30,25 @@ class FrontController extends Controller
         $brands = Brand::where('status', 1)->get(['brand_name', 'brand_image']);
         $blogs = Blog::where('status', 1)->orderBy('created_at', 'desc')->limit(4)->get();
         // dd($blogs);
-        $sliders = Slider::where('status', 1)->get(['slider_title', 'slider_image']);
-        $tyres = Product::where('status', 1)->where('category_id', 10)->limit(4)->get();
-        $engine_oil = Product::where('status', 1)->where('category_id', 13)->limit(4)->get();
-        $break_shoe = Product::where('status', 1)->where('category_id', 20)->limit(4)->get();
+        $sliders = Slider::where('status', 1)->orderBy('serial')->get(['slider_title', 'slider_image']);
+        $rameen = Product::where('status', 1)->where('category_id', 10)->limit(4)->get();
+        $tonkatsu = Product::where('status', 1)->where('category_id', 28)->limit(4)->get();
+        $tempura = Product::where('status', 1)->where('category_id', 9)->limit(4)->get();
         $battery = Product::where('status', 1)->where('category_id', 25)->limit(4)->get();
         $top_sell = Product::where('status', 1)->orderBy('total_sell', 'desc')->limit(5)->get();
 
         // car care items
         $child_ids = Category::where('parent_id', 6)->pluck('id');
-        $car_cares = [];
+        $sushi = [];
 
         // collect settings data
         $settings = Settings::first();
 
         if($child_ids->isNotEmpty()) {
-           $car_cares = Product::where('status', 1)->whereIn('category_id', $child_ids)->orderBy('created_at', 'asc')->paginate(20);
+           $sushi = Product::where('status', 1)->whereIn('category_id', $child_ids)->orderBy('created_at', 'asc')->paginate(20);
         }
 
-        return view('front.html.index', compact('brands', 'tyres', 'sliders', 'top_sell', 'engine_oil', 'battery', 'break_shoe', 'blogs', 'car_cares', 'settings'));
+        return view('front.html.index', compact('brands', 'rameen', 'sliders', 'top_sell', 'tonkatsu', 'battery', 'tempura', 'blogs', 'sushi', 'settings'));
     }
 
     public function blogs() {

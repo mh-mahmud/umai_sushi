@@ -382,6 +382,7 @@ class UserController extends Controller
             $sidebar_image_01 = $settings->sidebar_image_01;
         }
         if ($request->hasFile('sidebar_image_02')) {
+
             $fileNameWithExt = $request->file('sidebar_image_02')->getClientOriginalName();
             $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('sidebar_image_02')->getClientOriginalExtension();
@@ -389,6 +390,7 @@ class UserController extends Controller
             $path = $request->file('sidebar_image_02')->move(getcwd().'/public/uploads', $sidebar_image_02);
         }
         else {
+
             $sidebar_image_02 = $settings->sidebar_image_02;
         }
 
