@@ -5,17 +5,19 @@
          <div class="container">
             <div class="main-footer pb-15 mb-30">
                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-5 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-1 mb-40">
                         <div class="footer-logo mb-30">
                            <a href="{{ route('index') }}"><img style="width:165px" src="{{url('/')}}/assets/theme/assets/img/logo/car-clinic-logo.png" alt="logo"></a>
                         </div>
                         <div class="footer-content">
-                           <p>Carclinic is a leading Online Car Parts and accessories shop in Bangladesh. </p>
+                           <p>
+                              Japanese food emphasizes seasonal ingredients, with common staples like rice, miso soup, and seafood dishes such as sushi and sashimi. Popular main dishes include noodles like ramen and udon, deep-fried options like tempura and tonkatsu, savory pancakes called okonomiyaki, and hot pot dishes like nabe.
+                           </p>
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="col-lg-2 col-md-2 col-sm-6">
                      <div class="footer-widget footer-col-2 ml-30 mb-40">
                         <h4 class="footer-widget__title mb-30">Information</h4>
                         <div class="footer-widget__links">
@@ -56,6 +58,7 @@
                      </div>
                   </div>
 
+                  {{--
                   <div class="col-lg-3 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-5 mb-40">
                         <h4 class="footer-widget__title mb-30">Get Newsletter</h4>
@@ -68,9 +71,11 @@
                         </div>
                      </div>
                   </div>
+                  --}}
 
                </div>
             </div>
+            {{--
             <div class="footer-cta pb-20">
                <div class="row justify-content-between">
                   <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6">
@@ -85,7 +90,7 @@
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-8 col-md-8 col-sm-6">
-                     {{--<div class="footer-cta__source">
+                     {<div class="footer-cta__source">
                         <div class="footer-cta__source-content">
                            <h4 class="footer-cta__source-title">Download App on Mobile</h4>
                            <p>15% discount on your first purchase</p>
@@ -94,22 +99,23 @@
                            <a href="#"><img src="{{url('/')}}/assets/theme/assets/img/footer/f-google.jpg" alt="google"></a>
                            <a href="#"><img src="{{url('/')}}/assets/theme/assets/img/footer/f-app.jpg" alt="app"></a>
                         </div>
-                     </div>--}}
+                     </div>
                   </div>
                </div>
             </div>
+            --}}
          </div>
          <div class="footer-copyright black-bg-2">
             <div class="container">
                <div class="row align-items-center">
                   <div class="col-xl-6 col-lg-7 col-md-5">
                      <div class="footer-copyright__content">
-                        <span>Copyright 2024 <a href="index.html">©Car Clinic</a>.Powered by <a target="_blank" href="https://foxtechnologies.net">Fox Technologies</a>.</span>
+                        <span>Copyright 2024 <a href="index.html">©umai sushi</a> Powered by <a target="_blank" href="https://foxtechnologies.net">Fox Technologies</a>.</span>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-5 col-md-7">
                      <div class="footer-copyright__brand">
-                        <img src="{{url('/')}}/assets/theme/assets/img/footer/f-brand-icon-01.png" alt="footer-brand">
+                        <!-- <img src="{{url('/')}}/assets/theme/assets/img/footer/f-brand-icon-01.png" alt="footer-brand"> -->
                      </div>
                   </div>
                </div>
