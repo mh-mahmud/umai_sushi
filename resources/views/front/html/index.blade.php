@@ -146,17 +146,20 @@
             </div>
             <div class="tab-content" id="nav-tabContent">
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-                  <div class="row row-cols-xxl-5 row-cols-xl-5 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
+                  <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
                      @foreach($tyres as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
+
+                              {{--
                               @if($product->stock_status == "In Stock")
                                  <span class="tpproduct__thumb-discount_in-stock">{{$product->stock_status}}</span>
                               @else
                                  <span class="tpproduct__thumb-discount">{{$product->stock_status}}</span>
                               @endif
+                              --}}
                               
 
                               @if(file_exists(public_path('/uploads/products/'.$product->img_path)) )
@@ -209,17 +212,20 @@
             </div>
             <div class="tab-content" id="nav-tabContent">
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-                  <div class="row row-cols-xxl-5 row-cols-xl-5 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
+                  <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
                      @foreach($engine_oil as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
+
+                           {{--
                               @if($product->stock_status == "In Stock")
                                  <span class="tpproduct__thumb-discount_in-stock">{{$product->stock_status}}</span>
                               @else
                                  <span class="tpproduct__thumb-discount">{{$product->stock_status}}</span>
                               @endif
+                           --}}
                               
 
                               @if(file_exists(public_path('/uploads/products/'.$product->img_path)) )
@@ -270,17 +276,12 @@
             </div>
             <div class="tab-content" id="nav-tabContent">
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-                  <div class="row row-cols-xxl-5 row-cols-xl-5 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
+                  <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
                      @foreach($car_cares as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
-                              @if($product->stock_status == "In Stock")
-                                 <span class="tpproduct__thumb-discount_in-stock">{{$product->stock_status}}</span>
-                              @else
-                                 <span class="tpproduct__thumb-discount">{{$product->stock_status}}</span>
-                              @endif
                               
 
                               @if(file_exists(public_path('/uploads/products/'.$product->img_path)) )
@@ -328,21 +329,16 @@
                      <h4 class="tpsection__title">Break Shoe</h4>
                   </div>
                </div>
-               
+
             </div>
             <div class="tab-content" id="nav-tabContent">
                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-                  <div class="row row-cols-xxl-5 row-cols-xl-5 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
+                  <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-2">
 
                      @foreach($break_shoe as $product)
                      <div class="col">
                         <div class=" tpproduct pb-15 mb-30">
                            <div class="tpproduct__thumb p-relative">
-                              @if($product->stock_status == "In Stock")
-                                 <span class="tpproduct__thumb-discount_in-stock">{{$product->stock_status}}</span>
-                              @else
-                                 <span class="tpproduct__thumb-discount">{{$product->stock_status}}</span>
-                              @endif
                               
 
                               @if(file_exists(public_path('/uploads/products/'.$product->img_path)) )
@@ -450,50 +446,14 @@
 
       <!-- banner-area-start -->
       
+      <!-- banner-area-start -->
+ 
       <section class="banner-area pb-20">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-6 col-lg-12 col-md-12">
-                  <div class="tpbanneritems p-relative">
-                     <div class="tpbanneritem__thumb mb-20">
-                        <img src="{{url('/')}}/assets/theme/assets/img/banner/side-banner.png" alt="banner-img">
-                        <div class="tpbanneritem__content">
-                           <p style="color:red;">&nbsp;</p>
-                           <h5 class="tpbanneritem__title mb-60" style="color:#FFF">New Modern & Stylist <br> Products</h5>
-                           <div class="tpbanneritem__btn">
-                              <a class="tp-btn green-btn banner-animation" href="{{ route('all-products') }}">Shop Now <i class="fal fa-long-arrow-right"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-12 col-md-12">
-                  <div class="tpbanneritem">
-                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                           <div class="tpbanneritem__thumb banner-animation p-relative">
-                              <img src="{{url('/')}}/assets/theme/assets/img/banner/car-clinic-banner-02.png" alt="banner-img">
-                              <div class="tpbanneritem__text">
-                                 <h5 class="tpbanneritem__text-title"><a href="{{ route('all-products') }}">Free <br> Delivery</a></h5>
-                              </div>
-                              <span class="tp-banner-item-small"></span>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                           <div class="tpbanneritem__thumb banner-animation p-relative">
-                              <img src="{{url('/')}}/assets/theme/assets/img/banner/car-clinic-banner-03.png" alt="banner-img">
-                              <div class="tpbanneritem__text">
-                                 <h5 class="tpbanneritem__text-title"><a href="{{ route('all-products') }}">Buy Tyres</a></h5>
-                                 <h3 class="tpbanneritem__text-price">10% Offer</h3>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+        <div class="tpbanneritem__thumb mb-20">  
+        <img style="width:100%;" src="{{url('/')}}/assets/theme/assets/img/banner/green-farm.jpg" alt="banner-img">
+        </div>
       </section>
+      <!-- banner-area-end -->
       
       <!-- banner-area-end -->
 
@@ -550,109 +510,11 @@
       <!-- white-product-area-end -->
 
       <!-- brand-area-start -->
-      <section class="brand-area tpbrand black-bg-2 pt-65 pb-60">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-12">
-                  <div class="tpsection text-center mb-45">
-                     <h4 class="tpsection__title left-line right-line">Shop All Brands</h4>
-                  </div>
-               </div>
-            </div>
-            <div class="swiper-container brand-active">
-               <div class="swiper-wrapper brand-items">
 
-
-
-                  {{--@foreach($brands as $brand)
-                     <div class="swiper-slide">
-                        <img src="{{url('/')}}/uploads/brands/{{$brand->brand_image}}" alt="{{$brand->brand_name}}">
-                     </div>
-                  @endforeach --}}
-
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/lexus.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/nissan.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/audi.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/nfiniti.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/toyota.png" alt="brand">
-                  </div>
-
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/honda.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/landrover.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/mazda.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/bmw.png" alt="brand">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="{{url('/')}}/assets/theme/assets/img/brand/mercedez.png" alt="brand">
-                  </div>
-
-               </div>
-
-
-            </div>
-         </div>
-      </section>
       <!-- brand-area-end -->
 
       <!-- blog-area-start -->
-      <section class="blog-area pb-35 pt-65">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-12">
-                  <div class="tpsection mb-40">
-                     <h4 class="tpsection__title">Blog & Insights</h4>
-                  </div>
-               </div>
-            </div>
-            <div class="row gx-6">
 
-               @foreach($blogs as $blog)
-               <div class="col-lg-3 col-md-6 col-sm-6 tpblogborder mb-30">
-                  <div class="blogitem">
-                     <div class="blogitem__thumb fix mb-20">
-                        <a href="{{ route('blog-details', $blog->id) }}"><img src="{{url('/')}}/uploads/blogs/{{$blog->blog_image}}" alt="blog-bg"></a>
-                     </div>
-                     <div class="blogitem__content">
-                        <div class="blogitem__contetn-date mb-10">
-                           <ul>
-                              <li>
-                                 <a class="date-color" href="{{ route('blog-details', $blog->id) }}">Blog Category</a>
-                              </li>
-                              <li>
-                                 <a href="{{ route('blog-details', $blog->id) }}">{{ $blog->blog_category->category_name }}</a>
-                              </li>
-                           </ul>
-                        </div>
-                        <h4 class="blogitem__title mb-15">
-                           <a href="{{ route('blog-details', $blog->id) }}">{{ $blog->blog_name }}</a>
-                        </h4>
-                        <div class="blogitem__btn">
-                           <a href="{{ route('blog-details', $blog->id) }}">Read More</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               @endforeach
-
-            </div>
-         </div>
-      </section>
       <!-- blog-area-end -->
    </div>
 
