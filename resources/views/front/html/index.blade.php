@@ -42,7 +42,7 @@
                         <div class="tpslider-banner tp-slider-sm-banner mb-30">
                            <a href="#">
                               <div class="tpslider-banner__img">
-                                 <img src="{{url('/')}}/public/uploads/{{ $settings->sidebar_image_01 }}" alt="">
+                                 <img src="{{url('/')}}/public/public/uploads/{{ $settings->sidebar_image_01 }}" alt="">
                                  <!-- <div class="tpslider-banner__content">
                                     <span class="tpslider-banner__sub-title">Hand made</span>
                                     <h4 class="tpslider-banner__title">New Modern & Stylist <br> Crafts</h4>
@@ -55,7 +55,7 @@
                         <div class="tpslider-banner">
                            <a href="#">
                               <div class="tpslider-banner__img">
-                                 <img src="{{url('/')}}/public/uploads/{{ $settings->sidebar_image_02 }}" alt="">
+                                 <img src="{{url('/')}}/public/public/uploads/{{ $settings->sidebar_image_02 }}" alt="">
                                  <!-- <div class="tpslider-banner__content">
                                     <span class="tpslider-banner__sub-title">Popular</span>
                                     <h4 class="tpslider-banner__title">Energy with our <br> newest collection</h4>

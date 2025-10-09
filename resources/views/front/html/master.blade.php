@@ -79,6 +79,7 @@ else {
 			--}}
                <div class="col-xl-12 d-none d-xl-block">
                   <div class="headertoplag d-flex align-items-center justify-content-end">
+                     {{--
                      <div class="headertoplag__lang">
                         <ul>
                            <li>
@@ -91,6 +92,7 @@ else {
                            </li>
                         </ul>
                      </div>
+                     --}}
                      <div class="menu-top-social">
                         <a target="_blank" href="{{ $set_fb }}"><i class="fab fa-facebook-f"></i></a>
                         <a target="_blank" href="{{ $set_twitter }}"><i class="fab fa-twitter"></i></a>
@@ -153,6 +155,8 @@ else {
                               <option>EURO</option>
                            </select>
                         </div> -->
+
+                        {{--
                         <div class="header-meta__social d-flex align-items-center ml-25" style="color:red">
                            <button class="header-cart p-relative tp-cart-toggle">
                               <i class="fal fa-shopping-cart"></i>
@@ -163,6 +167,8 @@ else {
                            <a href="{{ route('user-login') }}"><i class="fal fa-user"></i></a>
                            <a href="{{ route('my-wishlist') }}"><i class="fal fa-heart"></i></a>
                         </div>
+                        --}}
+
                      </div>
                   </div>
                </div>
@@ -418,6 +424,8 @@ else {
                      </form>
                      --}}
                   </div>
+
+                  {{--
                   <div class="header-meta__social d-flex align-items-center ml-25">
                      <button class="header-cart p-relative tp-cart-toggle">
                         <i class="fal fa-shopping-cart"></i>
@@ -428,6 +436,8 @@ else {
                      <a href="{{ route('user-login') }}"><i class="fal fa-user"></i></a>
                      <a href="{{ route('my-wishlist') }}"><i class="fal fa-heart"></i></a>
                   </div>
+                  --}}
+
                </div>
             </div>
          </div>
@@ -446,6 +456,8 @@ else {
                   <a href="{{route('index')}}"><img style="width:145px" src="{{url('/')}}/assets/theme/assets/img/logo/car-clinic-logo.png" alt="logo"></a>
                </div>
             </div>
+
+            {{--
             <div class="col-3" style="color:#DC4C64;">
                <div class="header-meta-info d-flex align-items-center justify-content-end ml-25">
                   <div class="header-meta m-0 d-flex align-items-center">
@@ -466,6 +478,8 @@ else {
                   </div>
                </div>
             </div>
+            --}}
+
          </div>
       </div>
    </div>

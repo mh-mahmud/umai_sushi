@@ -24,7 +24,7 @@
       <section class="product-area pt-80 pb-25">
          <div class="container">
             <div class="row">
-               <div class="col-lg-5 col-md-12">
+               <div class="col-lg-6 col-md-12">
                   <div class="tpproduct-details__nab pr-50 mb-40">
                      <div class="d-flex align-items-start">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -46,10 +46,10 @@
 
                         </div>
 
-                        <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-content" id="v-pills-tabContent" style="width:100%;">
 
                           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                           <img src="{{url('/')}}/uploads/products/{{$product->img_path}}" alt="">
+                           <img style="width:100% !important" src="{{url('/')}}/uploads/products/{{$product->img_path}}" alt="">
                           </div>
 
                           @if(!empty($product->img_path_2))
@@ -68,7 +68,7 @@
                       </div>
                   </div>
                </div>
-               <div class="col-lg-5 col-md-7">
+               <div class="col-lg-4 col-md-7">
                   <div class="tpproduct-details__content">
                      <div class="tpproduct-details__tag-area d-flex align-items-center mb-5">
                         <span class="tpproduct-details__tag">{{$product->category->category_name}}</span>
