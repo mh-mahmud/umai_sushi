@@ -12,6 +12,7 @@ $set_youtube = $sett->youtube_link;
 $set_insta = $sett->instagram_link;
 $set_linkedin = $sett->linkedin_link;
 $set_whats_app_link = $sett->whats_app_link;
+$logo_img = \App\Helpers\Helper::settings()->logo;
 
 
 $cats = Category::where('parent_id', '=', null)->orderBy('id', 'asc')->get();
@@ -57,7 +58,7 @@ else {
    <!-- preloader end  -->
 
    <!-- Scroll-top -->
-   <a href="{{ $set_whats_app_link }}" class="whatsapp-float" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="40px"></a>
+   <!-- <a href="{{ $set_whats_app_link }}" class="whatsapp-float" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="40px"></a> -->
    <button class="scroll-top scroll-to-target" data-target="html">
       <i class="fas fa-angle-up"></i>
    </button>
@@ -107,11 +108,11 @@ else {
       </div>
       <div class="logo-area green-logo-area d-none d-xl-block">
          <div class="container">
-            <div class="row align-items-center" style="background-color: #2d2d2d;padding:10px;margin-left:0px;">
+            <div class="row align-items-center" style="background-color: #111;padding:1px;margin-left:0px;">
                <div class="col-xl-2 col-lg-3">
                   <!-- <div class="logo" style="width:155px;background-color: #332D2D;"> -->
                   <div class="logo">
-                     <a href="{{route('index')}}"><img style="width:145px" src="{{url('/')}}/assets/theme/assets/img/logo/car-clinic-logo.png" alt="car-clinic-logo"></a>
+                     <a href="{{route('index')}}"><img style="width:185px;margin-left:-15px" src="{{url('/').$logo_img}}" alt="umai-sushi-logo"></a>
                   </div>
                </div>
                <div class="col-xl-10 col-lg-9">
@@ -225,18 +226,18 @@ else {
                         </div>
                      </div> 
                   </div>
-                  <div class="col-xl-7 col-lg-6">
+                  <div class="col-xl-6 col-lg-5">
                      <div class="main-menu">
                         <nav id="mobile-menu">
                            <ul>
                               <li><a href="{{route('index')}}">Home</a></li>
                               <li><a href="{{ route('all-products') }}">Products</a></li>
-                              <li><a href="{{ route('blogs') }}">Blogs</a></li>
+                              <!-- <li><a href="{{ route('blogs') }}">Blogs</a></li> -->
                               <li><a href="{{ route('contact-us') }}">Contact</a></li>
                               <li><a href="{{ route('about-us') }}">About</a></li>
-                              <li><a href="{{ route('careers') }}">Career</a></li>
+                              <!-- <li><a href="{{ route('careers') }}">Career</a></li> -->
                               <li class="d-block d-md-none has-dropdown has-megamenu">
-                                 <a href="#">Categories</a>
+                                 <a href="#">Menu</a>
                                  <ul class="submenu mega-menu">
                                     @foreach($cats as $cat)
 
@@ -267,11 +268,12 @@ else {
 
                                  </ul>
                               </li>
+
                            </ul>
                         </nav>
                      </div>
                   </div>
-                  <div class="col-xl-3 col-lg-3">
+                  <div class="col-xl-4 col-lg-4">
 
                      <div class="menu-contact">
                         <ul>
@@ -313,8 +315,8 @@ else {
       <div class="container">
          <div class="row align-items-center">
             <div class="col-xl-2 col-lg-3">
-               <div class="logo" style="width:155px;background-color: #332D2D;">
-                  <a href="{{route('index')}}"><img style="width:145px" src="{{url('/')}}/assets/theme/assets/img/logo/car-clinic-logo.png" alt="logo"></a>
+               <div class="logo" style="width:155px;background-color: #111;">
+                  <a href="{{route('index')}}"><img style="width:145px" src="{{url('/')}}/assets/theme/assets/img/logo/logo.jpeg" alt="logo"></a>
                </div>
             </div>
             <div class="col-xl-6 col-lg-6">
@@ -323,10 +325,10 @@ else {
                      <ul>
                         <li><a href="{{route('index')}}">Home</a></li>
                         <li><a href="{{ route('all-products') }}">Products</a></li>
-                        <li><a href="{{ route('blogs') }}">Blogs</a></li>
+                        <!-- <li><a href="{{ route('blogs') }}">Blogs</a></li> -->
                         <li><a href="{{ route('contact-us') }}">Contact</a></li>
                         <li><a href="{{ route('about-us') }}">About</a></li>
-                        <li><a href="{{ route('careers') }}">Career</a></li>
+                        <!-- <li><a href="{{ route('careers') }}">Career</a></li> -->
                         
                         <li class="has-dropdown has-megamenu">
                            <a href="about.html">Pages</a>
@@ -401,7 +403,7 @@ else {
    <!-- header-xl-sticky-end -->
 
    <!-- header-md-lg-area -->
-   <div id="header-tab-sticky" class="tp-md-lg-header d-none d-md-block d-xl-none" style="background-color:#2d2d2d;margin-bottom: 20px;padding: 10px;">
+   <div id="header-tab-sticky" class="tp-md-lg-header d-none d-md-block d-xl-none" style="background-color:#111;margin-bottom: 20px;padding: 10px;">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-lg-3 col-md-4 d-flex align-items-center">
@@ -409,7 +411,7 @@ else {
                   <button class="tp-menu-toggle"><i class="far fa-bars"></i></button>
                </div>
                <div class="logo">
-                  <a href="{{route('index')}}"><img style="width:145px" src="{{url('/')}}/assets/theme/assets/img/logo/car-clinic-logo.png" alt="logo"></a>
+                  <a href="{{route('index')}}"><img style="width:145px" src="{{url('/').$logo_img}}" alt="logo"></a>
                </div>
             </div>
             <div class="col-lg-9 col-md-8">
@@ -443,7 +445,7 @@ else {
          </div>
       </div>
    </div>
-   <div id="header-mob-sticky" class="tp-md-lg-header d-md-none pt-20 pb-20" style="background-color: #2d2d2d;margin-bottom: 20px;">
+   <div id="header-mob-sticky" class="tp-md-lg-header d-md-none pt-20 pb-20" style="background-color: #000;margin-bottom: 20px;">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-3 d-flex align-items-center">
@@ -453,7 +455,7 @@ else {
             </div>
             <div class="col-6">
                <div class="logo text-center">
-                  <a href="{{route('index')}}"><img style="width:145px" src="{{url('/')}}/assets/theme/assets/img/logo/car-clinic-logo.png" alt="logo"></a>
+                  <a href="{{route('index')}}"><img style="width:185px" src="{{url('/').$logo_img}}" alt="logo"></a>
                </div>
             </div>
 
@@ -527,6 +529,7 @@ else {
             </div> -->
          </div>
       </div>
+      {{--
       @if(Auth::user())
       <div class="tpsideinfo__account-link">
          <a href="{{ route('customer-dashboard') }}"><i class="fal fa-tachometer-alt"></i> Dashboard</a>
@@ -540,9 +543,11 @@ else {
       </div>
       @endif
 
+
       <div class="tpsideinfo__wishlist-link">
          <a href="{{ route('my-wishlist') }}" target="_parent"><i class="fal fa-heart"></i> Wishlist</a>
       </div>
+      --}}
    </div>
    <div class="body-overlay"></div>
    <!-- sidebar-menu-area-end -->

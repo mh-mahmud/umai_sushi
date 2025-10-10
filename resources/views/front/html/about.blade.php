@@ -27,7 +27,7 @@
                <div class="row">
                   <div class="col-lg-6">
                      <div class="tpabout__inner-thumb mb-40">
-                        <img src="{{url('/')}}/assets/theme/assets/img/about-us.jpg" alt="">
+                        <img src="{{url('/')}}/assets/theme/assets/img/logo/page.jpg" alt="">
                      </div>
                   </div>
                   <div class="col-lg-6">
@@ -99,6 +99,7 @@
       <!-- about-area-end -->
 
       <!-- team-area-start -->
+      {{--
       <section class="team-area grey-bg-3 pb-30">
          <div class="container">
             <div class="row">
@@ -159,6 +160,7 @@
             </div>
          </div>
       </section>
+      --}}
       <!-- team-area-end -->
 
       <!-- feature-area-start -->

@@ -27,7 +27,7 @@
                <div class="row">
                   <div class="col-lg-6">
                      <div class="tpabout__inner-thumb mb-40">
-                        <img src="{{url('/')}}/assets/theme/assets/img/about-us.jpg" alt="">
+                        <img src="{{url('/')}}/assets/theme/assets/img/logo/page.jpg" alt="">
                      </div>
                   </div>
                   <div class="col-lg-6">

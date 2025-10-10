@@ -251,10 +251,13 @@
                                        </a>
                                        <div class="tpproduct__thumb-bg">
                                           <div class="tpproductactionbg">
+                                             {{--
                                              <a href="{{ route('add-to-cart', $product->id) }}"><i class="fal fa-shopping-basket"></i></a>
-                                             {{--<a href="#"><i class="fal fa-exchange"></i></a>--}}
+                                             <a href="#"><i class="fal fa-exchange"></i></a>--}}
                                              <a href="{{ route('product-details', $product->id) }}"><i class="fal fa-eye"></i></a>
+                                             {{--
                                              <a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>
+                                             --}}
                                           </div>
                                        </div>
                                     </div>
@@ -305,7 +308,7 @@
                                                 <a href="#"><i class="far fa-star"></i></a>
                                              </li>
                                              <li>
-                                                <span>(0)</span>
+                                                <span>({{$product->total_sell}})</span>
                                              </li>
                                           </ul>
                                        </div>

@@ -1,5 +1,7 @@
    <!-- footer-area-start -->
-
+@php
+$logo_img = \App\Helpers\Helper::settings()->logo;
+@endphp
    <footer>
       <div class="footer-area secondary-footer black-bg-2 pt-65">
          <div class="container">
@@ -8,7 +10,7 @@
                   <div class="col-lg-5 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-1 mb-40">
                         <div class="footer-logo mb-30">
-                           <a href="{{ route('index') }}"><img style="width:165px" src="{{url('/')}}/assets/theme/assets/img/logo/car-clinic-logo.png" alt="logo"></a>
+                           <a href="{{ route('index') }}"><img style="width:240px" src="{{url('/').$logo_img}}" alt="logo"></a>
                         </div>
                         <div class="footer-content">
                            <p>
@@ -23,10 +25,11 @@
                         <div class="footer-widget__links">
                            <ul>
                               <!-- <li><a href="#">Custom Service</a></li> -->
-                              <li><a href="{{ route('faq') }}">FAQs</a></li>
-                              <li><a href="{{ route('track-your-order') }}">Ordering Tracking</a></li>
+                              <!-- <li><a href="{{ route('faq') }}">FAQs</a></li> -->
+                              <!-- <li><a href="{{ route('track-your-order') }}">Ordering Tracking</a></li> -->
                               <li><a href="{{ route('contact-us') }}">Contacts</a></li>
                               <!-- <li><a href="#">Events</a></li> -->
+                              <li><a href="{{ route('about-us') }}">About Us</a></li>
                            </ul>
                         </div>
                      </div>
@@ -36,7 +39,7 @@
                         <h4 class="footer-widget__title mb-30">My Account</h4>
                         <div class="footer-widget__links">
                            <ul>
-                              <li><a href="{{ route('about-us') }}">About Us</a></li>
+                              
                               <li><a href="{{ route('return-policy') }}">Return Policy</a></li>
                               <!-- <li><a href="#">Discount</a></li> -->
                               <!-- <li><a href="#">Custom Service</a></li> -->

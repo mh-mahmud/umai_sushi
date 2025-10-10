@@ -1,6 +1,11 @@
 @extends('front.html.master')
 @section('content')
+<style type="text/css">
+   .fal, .far {
+/*         color: #FFF;*/
+   }
 
+</style>
    <div class="free">
       <!-- slider-area-start -->
       <section class="slider-area pb-25">
@@ -96,8 +101,8 @@
                          </svg>                         
                      </div>
                      <div class="tpservicesitem__content">
-                        <h4 class="tpservicesitem__title">Free Returns</h4>
-                        <p>30-days free return policy</p>
+                        <h4 class="tpservicesitem__title">Delivery Support</h4>
+                        <p>We provide door to door delivery</p>
                      </div>
                   </div>
                </div>
@@ -175,7 +180,7 @@
                               <div class="tpproduct__thumb-action">
                                  <!-- <a class="comphare" href="#"><i class="fal fa-exchange"></i></a> -->
                                  <a class="quckview" href="{{route('product-details', $product->id)}}"><i class="fal fa-eye"></i></a>
-                                 <a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>
+                                 {{--<a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>--}}
                               </div>
                            </div>
                            <div class="tpproduct__content">
@@ -184,9 +189,12 @@
                                  <div class="tpproduct__priceinfo-list">
                                     <span>Tk {{$product->product_value}}</span>
                                  </div>
+
+                                 {{--
                                  <div class="tpproduct__cart">
                                     <a href="{{ route('add-to-cart', $product->id) }}"><i class="fal fa-shopping-cart"></i>Add To Cart</a>
                                  </div>
+                                 --}}
                               </div>
                            </div>
                         </div>
@@ -241,7 +249,7 @@
                               <div class="tpproduct__thumb-action">
                                  <!-- <a class="comphare" href="#"><i class="fal fa-exchange"></i></a> -->
                                  <a class="quckview" href="{{route('product-details', $product->id)}}"><i class="fal fa-eye"></i></a>
-                                 <a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>
+                                 {{--<a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>--}}
                               </div>
                            </div>
                            <div class="tpproduct__content">
@@ -250,9 +258,11 @@
                                  <div class="tpproduct__priceinfo-list">
                                     <span>Tk {{$product->product_value}}</span>
                                  </div>
+                                 {{--
                                  <div class="tpproduct__cart">
                                     <a href="{{ route('add-to-cart', $product->id) }}"><i class="fal fa-shopping-cart"></i>Add To Cart</a>
                                  </div>
+                                 --}}
                               </div>
                            </div>
                         </div>
@@ -297,7 +307,7 @@
                               <div class="tpproduct__thumb-action">
                                  <!-- <a class="comphare" href="#"><i class="fal fa-exchange"></i></a> -->
                                  <a class="quckview" href="{{route('product-details', $product->id)}}"><i class="fal fa-eye"></i></a>
-                                 <a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>
+                                 {{--<a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>--}}
                               </div>
                            </div>
                            <div class="tpproduct__content">
@@ -306,9 +316,11 @@
                                  <div class="tpproduct__priceinfo-list">
                                     <span>Tk {{$product->product_value}}</span>
                                  </div>
+                                 {{--
                                  <div class="tpproduct__cart">
                                     <a href="{{ route('add-to-cart', $product->id) }}"><i class="fal fa-shopping-cart"></i>Add To Cart</a>
                                  </div>
+                                 --}}
                               </div>
                            </div>
                         </div>
@@ -354,7 +366,7 @@
                               <div class="tpproduct__thumb-action">
                                  <!-- <a class="comphare" href="#"><i class="fal fa-exchange"></i></a> -->
                                  <a class="quckview" href="{{route('product-details', $product->id)}}"><i class="fal fa-eye"></i></a>
-                                 <a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>
+                                 {{--<a data-product_id="{{ $product->id }}" class="wishlist" href="#"><i class="fal fa-heart"></i></a>--}}
                               </div>
                            </div>
                            <div class="tpproduct__content">
@@ -363,9 +375,11 @@
                                  <div class="tpproduct__priceinfo-list">
                                     <span>Tk {{$product->product_value}}</span>
                                  </div>
+                                 {{--
                                  <div class="tpproduct__cart">
                                     <a href="{{ route('add-to-cart', $product->id) }}"><i class="fal fa-shopping-cart"></i>Add To Cart</a>
                                  </div>
+                                 --}}
                               </div>
                            </div>
                         </div>
