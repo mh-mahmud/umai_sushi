@@ -108,11 +108,11 @@ else {
       </div>
       <div class="logo-area green-logo-area d-none d-xl-block">
          <div class="container">
-            <div class="row align-items-center" style="background-color: #111;padding:1px;margin-left:0px;">
+            <div class="row align-items-center" style="background-color: #111;padding:10px;margin-left:0px;">
                <div class="col-xl-2 col-lg-3">
-                  <!-- <div class="logo" style="width:155px;background-color: #332D2D;"> -->
                   <div class="logo">
-                     <a href="{{route('index')}}"><img style="width:185px;margin-left:-15px" src="{{url('/').$logo_img}}" alt="umai-sushi-logo"></a>
+                     {{--<a href="{{route('index')}}"><img style="width:185px;margin-left:-15px" src="{{url('/').$logo_img}}" alt="umai-sushi-logo"></a>--}}
+                     <a href="{{ route('index') }}" style="color:#FFF;font-family: Playfair Display, Georgia, serif;font-weight:bold;font-size:22px;">Umai Sushi</a>
                   </div>
                </div>
                <div class="col-xl-10 col-lg-9">
@@ -403,15 +403,16 @@ else {
    <!-- header-xl-sticky-end -->
 
    <!-- header-md-lg-area -->
-   <div id="header-tab-sticky" class="tp-md-lg-header d-none d-md-block d-xl-none" style="background-color:#111;margin-bottom: 20px;padding: 10px;">
+   <div id="header-tab-sticky" class="tp-md-lg-header d-none d-md-block d-xl-none" style="background-color:#111;margin-bottom: 20px;padding: 7px;">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-lg-3 col-md-4 d-flex align-items-center">
                <div class="header-canvas flex-auto">
                   <button class="tp-menu-toggle"><i class="far fa-bars"></i></button>
                </div>
-               <div class="logo">
-                  <a href="{{route('index')}}"><img style="width:145px" src="{{url('/').$logo_img}}" alt="logo"></a>
+               <div class="logo" style="padding-top:10px">
+                  {{--<a href="{{route('index')}}"><img style="width:145px" src="{{url('/').$logo_img}}" alt="logo"></a>--}}
+                  <a href="{{ route('index') }}" style="color:#FFF;font-family: Playfair Display, Georgia, serif;font-weight:bold;font-size:22px;">Umai Sushi</a>
                </div>
             </div>
             <div class="col-lg-9 col-md-8">
@@ -445,7 +446,7 @@ else {
          </div>
       </div>
    </div>
-   <div id="header-mob-sticky" class="tp-md-lg-header d-md-none pt-20 pb-20" style="background-color: #000;margin-bottom: 20px;">
+   <div id="header-mob-sticky" class="tp-md-lg-header d-md-none pt-15 pb-10" style="background-color: #000;margin-bottom: 20px;">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-3 d-flex align-items-center">
@@ -455,7 +456,8 @@ else {
             </div>
             <div class="col-6">
                <div class="logo text-center">
-                  <a href="{{route('index')}}"><img style="width:185px" src="{{url('/').$logo_img}}" alt="logo"></a>
+                  {{--<a href="{{route('index')}}"><img style="width:185px" src="{{url('/').$logo_img}}" alt="logo"></a>--}}
+                  <a href="{{ route('index') }}" style="color:#FFF;font-family: Playfair Display, Georgia, serif;font-weight:bold;font-size:22px;">Umai Sushi</a>
                </div>
             </div>
 

@@ -10,7 +10,8 @@ $logo_img = \App\Helpers\Helper::settings()->logo;
                   <div class="col-lg-5 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-1 mb-40">
                         <div class="footer-logo mb-30">
-                           <a href="{{ route('index') }}"><img style="width:240px" src="{{url('/').$logo_img}}" alt="logo"></a>
+                           {{--<a href="{{ route('index') }}"><img style="width:240px" src="{{url('/').$logo_img}}" alt="logo"></a>--}}
+                           <a href="{{ route('index') }}" style="color:#FFF;font-family: Playfair Display, Georgia, serif;font-weight:bold;font-size:22px;">Umai Sushi</a>
                         </div>
                         <div class="footer-content">
                            <p>
