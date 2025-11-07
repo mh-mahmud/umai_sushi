@@ -1,6 +1,7 @@
    <!-- footer-area-start -->
 @php
 $logo_img = \App\Helpers\Helper::settings()->logo;
+$footer_msg = \App\Helpers\Helper::settings()->footer_message;
 @endphp
    <footer>
       <div class="footer-area secondary-footer black-bg-2 pt-65">
@@ -15,7 +16,7 @@ $logo_img = \App\Helpers\Helper::settings()->logo;
                         </div>
                         <div class="footer-content">
                            <p>
-                              Japanese food emphasizes seasonal ingredients, with common staples like rice, miso soup, and seafood dishes such as sushi and sashimi. Popular main dishes include noodles like ramen and udon, deep-fried options like tempura and tonkatsu, savory pancakes called okonomiyaki, and hot pot dishes like nabe.
+                              {!! $footer_msg !!}
                            </p>
                         </div>
                      </div>
@@ -28,27 +29,14 @@ $logo_img = \App\Helpers\Helper::settings()->logo;
                               <!-- <li><a href="#">Custom Service</a></li> -->
                               <!-- <li><a href="{{ route('faq') }}">FAQs</a></li> -->
                               <!-- <li><a href="{{ route('track-your-order') }}">Ordering Tracking</a></li> -->
-                              <li><a href="{{ route('contact-us') }}">Contacts</a></li>
+                              <li><a href="{{ route('index') }}">Home</a></li>
                               <!-- <li><a href="#">Events</a></li> -->
                               <li><a href="{{ route('about-us') }}">About Us</a></li>
                            </ul>
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                     <div class="footer-widget footer-col-3 mb-40">
-                        <h4 class="footer-widget__title mb-30">My Account</h4>
-                        <div class="footer-widget__links">
-                           <ul>
-                              
-                              <li><a href="{{ route('return-policy') }}">Return Policy</a></li>
-                              <!-- <li><a href="#">Discount</a></li> -->
-                              <!-- <li><a href="#">Custom Service</a></li> -->
-                              <li><a href="{{ route('terms-and-conditions') }}">Terms & Condition</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
+
                   <div class="col-lg-2 col-md-4 col-sm-6">
                      <div class="footer-widget footer-col-4 mb-40">
                         <h4 class="footer-widget__title mb-30">Social Network</h4>
@@ -114,7 +102,7 @@ $logo_img = \App\Helpers\Helper::settings()->logo;
                <div class="row align-items-center">
                   <div class="col-xl-6 col-lg-7 col-md-5">
                      <div class="footer-copyright__content">
-                        <span>Copyright 2024 <a href="index.html">©umai sushi</a> Powered by <a target="_blank" href="https://foxtechnologies.net">Fox Technologies</a>.</span>
+                        <span>&copy; 2025 umai sushi Powered by <a target="_blank" href="https://foxtechnologies.net">Fox Technologies</a>.</span>
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-5 col-md-7">

@@ -73,8 +73,8 @@ else {
 			{{--
                <div class="col-xl-7 col-lg-12 col-md-12">
                   <div class="header-welcome-text">
-                     <span>Welcome to our international shop! Enjoy free shipping on orders $100 & up.</span>
-                     <a href="#">Shop Now<i class="fal fa-long-arrow-right"></i></a>
+                     <!-- <span>Welcome to our international shop! Enjoy free shipping on orders $100 & up.</span>
+                     <a href="#">Shop Now<i class="fal fa-long-arrow-right"></i></a> -->
                   </div>
                </div>
 			--}}
@@ -181,12 +181,10 @@ else {
          <div class="for-megamenu p-relative">
             <div class="container">
                <div class="row align-items-center">
-
-
                   <div class="col-xl-2 col-lg-3">
                      <div class="cat-menu__category p-relative">
-                        <a class="tp-cat-toggle" href="#" role="button"><i style="color:#111" class="fal fa-bars"></i>&nbsp</a>
-                        {{--<div class="category-menu category-menu-off">
+                        <a class="tp-cat-toggle" href="#" role="button"><i style="color:#111" class="fal fa-bars"></i>Menu</a>
+                        <div class="category-menu category-menu-off">
                            <ul class="cat-menu__list">
                               @foreach($cats as $cat)
 
@@ -218,8 +216,14 @@ else {
                               @endforeach
 
                            </ul>
-                           
-                        </div>--}}
+                           <!-- <div class="daily-offer">
+                              <ul>
+                                 <li><a href="shop.html">Value of the Day</a></li>
+                                 <li><a href="shop.html">Top 100 Offers</a></li>
+                                 <li><a href="shop.html">New Arrivals</a></li>
+                              </ul>
+                           </div> -->
+                        </div>
                      </div> 
                   </div>
                   <div class="col-xl-6 col-lg-5">
@@ -227,8 +231,11 @@ else {
                         <nav id="mobile-menu">
                            <ul>
                               <li><a href="{{route('index')}}">Home</a></li>
+                              <li><a href="{{ route('all-products') }}">Products</a></li>
+                              <!-- <li><a href="{{ route('blogs') }}">Blogs</a></li> -->
+                              <li><a href="{{ route('contact-us') }}">Contact</a></li>
                               <li><a href="{{ route('about-us') }}">About</a></li>
-                              {{--
+                              <!-- <li><a href="{{ route('careers') }}">Career</a></li> -->
                               <li class="d-block d-md-none has-dropdown has-megamenu">
                                  <a href="#">Menu</a>
                                  <ul class="submenu mega-menu">
@@ -261,7 +268,6 @@ else {
 
                                  </ul>
                               </li>
-                              --}}
 
                            </ul>
                         </nav>

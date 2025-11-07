@@ -73,6 +73,7 @@
                                                 </div>
                                             </div>
 
+                                            {{--
                                             <div class="col-md-6">
                                                 <div class="fv-row mb-3">
                                                     <!--begin::Label-->
@@ -166,7 +167,7 @@
                                                 </div>
                                             </div>
 
-                                            {{--
+                                            
                                             <div class="col-md-6">
                                                 <div class="fv-row mb-3">
                                                     <label class="form-label fw-bolder text-dark">Club Points</label>
@@ -177,7 +178,7 @@
                                                     @endif
                                                 </div>
                                             </div>
-                                            --}}
+                                            
 
                                             {{--<div class="col-md-6">
                                                 <div class="form-group">
@@ -196,10 +197,11 @@
                                             <div class="col-md-6">
                                                 <div class="fv-row mb-3">
                                                     <label class="form-label fw-bolder text-dark">Main Image</label>
-                                                    <input class="form-control form-control-sm form-control-solid" type="file" name="img_path" autocomplete="off" />
+                                                    <input required class="form-control form-control-sm form-control-solid" type="file" name="img_path" autocomplete="off" />
                                                 </div>
                                             </div>
 
+                                            {{--
                                             <div class="col-md-6">
                                                 <div class="fv-row mb-3">
                                                     <label class="form-label fw-bolder text-dark">Image 2</label>
@@ -247,7 +249,7 @@
                                                     <label class="form-label fw-bolder text-dark">Image 8</label>
                                                     <input class="form-control form-control-sm form-control-solid" type="file" name="img_path_8" autocomplete="off" />
                                                 </div>
-                                            </div>--}}
+                                            </div>
 
                                             <div class="col-md-6">
                                                 <div class="fv-row mb-3">
@@ -273,7 +275,7 @@
                                                 </div>
                                             </div>
 
-                                            {{--
+                                            
                                             <div class="col-md-6">
                                                 <div class="fv-row mb-3">
                                                     <label class="form-label fw-bolder text-dark">Max Purchase Limit</label>
@@ -284,7 +286,7 @@
                                                     @endif
                                                 </div>
                                             </div>
-                                            --}}
+                                            
 
                                             <div class="col-md-6">
                                                 <div class="fv-row mb-3">
@@ -326,7 +328,7 @@
                                                 </div>
                                             </div>
 
-                                            {{--
+                                            
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="form-label fw-bolder text-dark" for="textarea">Key Features</label>

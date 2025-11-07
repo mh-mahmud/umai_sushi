@@ -25,13 +25,13 @@ use App\Helpers\Helper;
 
 class FrontController extends Controller
 {
-    public function html() {
+    public function html_old() {
 
         $brands = Brand::where('status', 1)->get(['brand_name', 'brand_image']);
         $blogs = Blog::where('status', 1)->orderBy('created_at', 'desc')->limit(4)->get();
         // dd($blogs);
         $sliders = Slider::where('status', 1)->orderBy('serial')->get(['slider_title', 'slider_image']);
-        $rameen = Product::where('status', 1)->where('category_id', 10)->limit(4)->get();
+        $products = Product::where('status', 1)->get();
         $tonkatsu = Product::where('status', 1)->where('category_id', 28)->limit(4)->get();
         $tempura = Product::where('status', 1)->where('category_id', 9)->limit(4)->get();
         $battery = Product::where('status', 1)->where('category_id', 25)->limit(4)->get();
@@ -48,7 +48,14 @@ class FrontController extends Controller
            $sushi = Product::where('status', 1)->whereIn('category_id', $child_ids)->orderBy('created_at', 'asc')->paginate(20);
         }
 
-        return view('front.html.index', compact('brands', 'rameen', 'sliders', 'top_sell', 'tonkatsu', 'battery', 'tempura', 'blogs', 'sushi', 'settings'));
+        return view('front.html.index_new', compact('brands', 'products', 'sliders', 'top_sell', 'tonkatsu', 'battery', 'tempura', 'blogs', 'sushi', 'settings'));
+    }
+
+    public function html() {
+        $products = Product::where('status', 1)->get();
+        $settings = Settings::first();
+
+        return view('front.html.index_new', compact('products', 'settings'));
     }
 
     public function blogs() {

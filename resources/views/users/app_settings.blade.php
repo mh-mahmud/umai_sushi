@@ -102,17 +102,18 @@
                                 </div>
                             </div>
 
+                            {{--
                             <div class="col-md-6">
                                 <div class="fv-row mb-3">
-                                    <!--begin::Label-->
                                     <label class="form-label fw-bolder text-dark">Whats App Link</label>
                                     <input class="form-control form-control-sm form-control-solid" type="text" name="whats_app_link" value="{{ old('whats_app_link', $data->whats_app_link) }}" autocomplete="off" />
-                                    <!--end::Input-->
+
                                     @if ($errors->has('whats_app_link'))
                                     <span class="text-danger">{{ $errors->first('whats_app_link') }}</span>
                                     @endif
                                 </div>
                             </div>
+                            --}}
 
                             <div class="col-md-6">
                                 <div class="fv-row mb-3">
@@ -212,6 +213,7 @@
                                 </div>
                             </div>
 
+                            {{--
                             <div class="col-md-6">
                                 <div class="fv-row mb-3">
                                     <!--begin::Label-->
@@ -261,7 +263,7 @@
                             </div>
 
 
-                            {{--
+                            
                             <div class="col-md-6">
                                 <div class="fv-row mb-3">
                                     <label class="form-label  fw-bolder text-dark">product Image Upload</label>
@@ -284,7 +286,7 @@
                             <!-- images section -->
                             <div class="col-md-6">
                                 <div class="fv-row mb-3">
-                                    <label class="form-label  fw-bolder text-dark">Sidebar Image01</label>
+                                    <label class="form-label  fw-bolder text-dark">Front Page Image</label>
                                     <input class="form-control form-control-sm form-control-solid" type="file" name="sidebar_image_01" autocomplete="off" />
 
                                     @if ($data->sidebar_image_01)
@@ -300,6 +302,7 @@
                                 </div>
                             </div>
 
+                            {{--
                             <div class="col-md-6">
                                 <div class="fv-row mb-3">
                                     <label class="form-label  fw-bolder text-dark">Sidebar Image02</label>
@@ -319,7 +322,7 @@
                             </div>
 
 
-                            {{--
+                            
                             <div class="col-md-6">
                                 <div class="fv-row mb-3">
                                     <label class="form-label fw-bolder text-dark">Stock Status</label>
@@ -349,7 +352,7 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label fw-bolder text-dark" for="textarea">Contact Address</label>
+                                    <label class="form-label fw-bolder text-dark" for="textarea">Find Us Section</label>
                                     <textarea class="form-control form-control-sm  form-control-solid editor" name="contact_address" rows="3">{{ $data->contact_address }}</textarea>
                                     @if ($errors->has('contact_address'))
                                         <span class="text-danger">{{ $errors->first('contact_address') }}</span>
@@ -359,7 +362,7 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label fw-bolder text-dark" for="textarea">Return Policy</label>
+                                    <label class="form-label fw-bolder text-dark" for="textarea">Our Mission</label>
                                     <textarea
                                         class="form-control form-control-sm  form-control-solid editor" name="return_policy"
                                         rows="3">{{ $data->return_policy }}</textarea>
@@ -373,7 +376,7 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="form-label fw-bolder text-dark" for="textarea">Terms & Conditions</label>
+                                    <label class="form-label fw-bolder text-dark" for="textarea">Our Vision</label>
                                     <textarea
                                         class="form-control form-control-sm  form-control-solid editor" name="terms_and_conditions"
                                         rows="3">{{ $data->terms_and_conditions }}</textarea>
@@ -399,6 +402,7 @@
                                 </div>
                             </div>
 
+                            {{--
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label fw-bolder text-dark" for="textarea">FAQ</label>
@@ -412,6 +416,7 @@
                                     @endif
                                 </div>
                             </div>
+                            --}}
 
                         </div>
                         <!--End Row-->
