@@ -73,9 +73,9 @@ The platform is optimized for Japanese customers and business workflows.
 
 ## 🧰 Technology Stack
 
-**Backend** - PHP / Laravel - REST API
+**Backend** - Laravel - REST API
 
-**Frontend** - Vue.js / React / Blade - HTML5, CSS3, JavaScript
+**Frontend** - Blade - HTML5, CSS3, JavaScript
 
 **Database** - MySQL / PostgreSQL
 
